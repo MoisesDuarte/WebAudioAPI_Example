@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Audio</title>
+
+    <style>
+        .site-container {
+            margin: auto;
+            width: 30%;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: auto auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="site-container">
+        <div class="grid-container">
+            <audio type="audio/mpeg" crossorigin="anonymous"></audio>
+            <label for="volume">Volume:</label>
+            <input type="range" id="volume" min="0" max="2" value="1" step="0.01">
+            <label for="panner">Pan:</label>
+            <input type="range" id="panner" min="-1" max="1" value="0" step="0.01">
+            <button data-tocando="false">Play/Pause</button>
+            <select id="music-selection">
+                <option value="WaterSurface">Water Surface</option>
+                <option value="DistantMemories">Distant Memories</option>
+                <option value="GraySnow">Gray Snow</option>
+            </select>
+            <p>Música por: <a href="agnello-pecora.chu.jp/CAMeLIA/">*CAMeLIA*</a></p>
+        </div>
+    </div>
+</body>
+
+<script src="js/main.js"></script>
+</html>
